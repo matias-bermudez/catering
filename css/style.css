@@ -30,7 +30,8 @@ header {
 }
 
 .top-main {
-    height: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 .top-main video {
@@ -40,6 +41,7 @@ header {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
 .top-main .capa {
@@ -54,7 +56,46 @@ header {
     mix-blend-mode: overlay;
 }
 
-.servicios {
+/*about us*/
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
     height: 100vh;
-    background-color: skyblue;
+    background-color: #f5ebe2;
+    flex-wrap: wrap;
+    padding: 100px 90px;
 }
+
+.about-us .info-about-us {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.about-us .info-about-us p{
+    max-width: 600px;
+}
+
+.about-us img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.about-us .info-about-us, .about-us img {
+    margin: 20vh 0px;
+}
+
+/*about us fin*/
+
+.servicios {
+    display: flex;
+    background-color: #ad734e;
+}
+
