@@ -79,6 +79,7 @@ header {
 
 .about-us .info-about-us p{
     font-size: 1.2rem;
+    color: #451d07;
     font-family: "Enriqueta", serif;
     font-weight: 400;
     font-style: normal;
@@ -86,6 +87,7 @@ header {
 
 .about-us .info-about-us .titulo-section {
     font-size: 3rem;
+    color: #451d07;
     font-family: "Merienda", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -111,8 +113,71 @@ header {
 
 /*about us fin*/
 
+/*Servicios*/
+
 .servicios {
     display: flex;
+    flex-direction: column;
+    height: 100vh;
     background-color: #ad734e;
 }
 
+.servicios .titulo-section {
+    font-size: 3rem;
+    color:  #f5ebe2;
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.servicios .carousel-inner {
+    padding: 100px 90px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.servicios .carousel-inner .carousel-item.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    width: 80%;
+    height: auto;
+}
+
+.servicios .carousel-inner .carousel-item.active p,
+.servicios .carousel-inner .carousel-item.active h5 {
+    text-align: right;
+    color:  #f5ebe2;
+    max-width: 600px;
+    padding: 20px 100px 0px 0px;
+}
+
+.servicios .carousel-inner .carousel-item.active h5 {
+    font-size: 2rem;
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.servicios .carousel-inner .carousel-item.active p {
+    font-size: 1.2rem;
+    font-family: "Enriqueta", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.servicios .carousel-inner .carousel-item.active img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: 0;
+    margin-left: 10px;
+    padding: 8px 8px 50px 8px;
+    border-radius: 5px;
+    box-shadow: 2px 0px 5px  #000000;
+    transform: rotate(5deg);
+
+}
