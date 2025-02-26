@@ -375,7 +375,6 @@ header {
         margin-bottom: 10px;
         padding: 10px;
         text-shadow: 1px 0px 2px #451d07;
-
     }
 
     .cocina .carousel {
@@ -493,3 +492,30 @@ header {
     }
 
 /*Cocina final*/
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-color: #f5ebe2;
+    }
+
+    .contacto h2 {
+        font-size: 3rem;
+        color:  #451d07;
+        font-family: "Merienda", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-shadow: 1px 0px 2px #451d07;
+    }
+
+    .contacto form {
+        display: flex;
+        flex-direction: column;
+    }
