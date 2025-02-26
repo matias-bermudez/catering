@@ -67,6 +67,28 @@ header {
     clip-path: url(#clipS);
 }
 
+.curva-top {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 500px;
+    background: #f5ebe2;
+    z-index: 2;
+    clip-path: url(#clip2S);
+}
+
+.curva-bottom {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 100%;
+    height: 500px;
+    background: #f5ebe2;
+    z-index: 2;
+    clip-path: url(#clip2S-bottom);
+}
+
 /*about us*/
 
 .about-us {
@@ -103,7 +125,7 @@ header {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    text-shadow: 1px 0px 5px #451d07;
+    text-shadow: 1px 0px 2px #451d07;
 }
 
 .about-us img {
@@ -142,14 +164,22 @@ header {
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    margin-top: 90px;
     padding: 20px 0px 10px 0px;
-    text-shadow: 1px 0px 5px #451d07;
+    text-shadow: 1px 0px 2px #451d07;
+}
+
+.servicios .carousel-control-prev-icon {
+    background-image: url('../assets/img/iconos/izq.png');
+}
+
+.servicios .carousel-control-next-icon {
+    background-image: url('../assets/img/iconos/der.png');
 }
 
 .servicios .carousel-inner {
     padding: 90px 90px;
     height: 550px !important; 
-    margin-top: 50px;
 }
 
 .servicios .carousel-inner .carousel-item {
@@ -221,21 +251,10 @@ header {
 .servicios .carousel-inner .carousel-item.imgizq p,
 .servicios .carousel-inner .carousel-item.imgizq h5 {
     text-align: right;
-    color:  #f5ebe2;
+    color:  #451d07;
     max-width: 600px;
     padding: 20px 0px 0px 100px;
     text-align: left;
-}
-
-.servicios .curva-equipo {
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 500px;
-    background: #f5ebe2;
-    z-index: 2;
-    clip-path: url(#clip2S);
 }
 
 /*Equipo*/
@@ -264,7 +283,7 @@ header {
     }
 
     .equipo h2 {
-        text-shadow: 1px 0px 5px #451d07;
+        text-shadow: 1px 0px 2px #451d07;
     }
 
     .equipo .mozos h3, .equipo .ganadero h3, .equipo .chefs h3 {
@@ -345,13 +364,37 @@ header {
         background-color: #dbd294;
     }
 
+    .cocina h2 {
+        font-size: 3rem;
+        color:  #451d07;
+        font-family: "Merienda", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-shadow: 1px 0px 2px #451d07;
+
+    }
+
     .cocina .carousel {
         height: 520px;
         width: 90%;
+        background-color: #dbd294;
+    }
+
+    .cocina .carousel-control-prev-icon {
+        background-image: url('../assets/img/iconos/izq.png');
+    }
+    
+    .cocina .carousel-control-next-icon {
+        background-image: url('../assets/img/iconos/der.png');
     }
 
     .cocina .carousel .carousel-inner .carousel-item {
         display: none;
+        background-color: #dbd294;
     }
 
     .cocina .carousel .carousel-inner .carousel-item.active {
@@ -360,6 +403,7 @@ header {
         align-items: center;
         justify-content: center;
         height: 520px;
+        background-color: #dbd294;
     }
 
     .cocina .carousel .carousel-inner .carousel-item .platos, .cocina .carousel .carousel-inner .carousel-item.active .platos{
