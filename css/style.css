@@ -497,6 +497,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         height: 100vh;
         width: 100%;
         background-color: #f5ebe2;
@@ -510,7 +511,7 @@ header {
         font-weight: 400;
         font-style: normal;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 89px;
         padding: 10px;
         text-shadow: 1px 0px 2px #451d07;
     }
@@ -518,4 +519,116 @@ header {
     .contacto form {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 500px;
+    }
+
+    .contacto form::placeholder {
+        color: #451d07;
+        font-family: "Enriqueta", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .contacto form div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #451d0749;
+        height: 45px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(79, 79, 79, 0.458);
+    }
+
+    .contacto form div input {
+        width: 400px;
+        border: none;
+        height: 45px;
+        padding: 0px 10px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transition: transform 1s ease;
+    }
+
+    .contacto form div input:focus {
+        transform: scale(1.08);
+        outline: none;
+    }
+
+    .contacto form div label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        border: none;
+        height: 45px;
+        text-align: center;
+        font-family: "Enriqueta", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .contacto form div select {
+        border-radius: 15px;
+        border: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contacto form .fecha label {
+        width: 200px;
+    }
+
+    .contacto form .submit {
+        border: none;
+        border-radius: 15px;
+        background-color: white;
+        height: 45px;
+        width: 100px;
+        box-shadow: 0px 0px 10px rgba(79, 79, 79, 0.458);
+        transition: background-color 0.5s ease;
+    }
+
+    .contacto form .submit:hover {
+        background-color: #451d0749;
+    }
+
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .footer-logo h2 {
+        color: #FFD700;
+    }
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-links ul li {
+        margin: 5px 0;
+    }
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+    }
+    .footer-contact p, .footer-copy {
+        margin: 5px 0;
+    }
+    .footer-social a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5em;
+    }
+    .footer-copy {
+        margin-top: 10px;
+        font-size: 0.9em;
     }
