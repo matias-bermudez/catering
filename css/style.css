@@ -391,6 +391,10 @@ header {
         background-image: url('../assets/img/iconos/der.png');
     }
 
+    .cocina button {
+        padding: 0px 40px;
+    }
+
     .cocina .carousel .carousel-inner .carousel-item {
         display: none;
         background-color: #dbd294;
@@ -631,4 +635,28 @@ header {
     .footer-copy {
         margin-top: 10px;
         font-size: 0.9em;
+    }
+
+    @media(max-width:1600px) {
+        .cocina .carousel .carousel-inner .platos .card-container .card-img-top {
+            width: 300px;
+        }
+
+        .cocina .carousel {
+            width: 100%;
+        }
+    }
+
+    @media(max-width:1260px) {
+        /*.about-us {
+            padding: 100px 40px
+        }*/
+
+        .about-us img, .about-us .info-about-us {
+            margin: 0;
+        }
+
+        .about-us {
+            padding: 50px 10px;
+        }
     }
