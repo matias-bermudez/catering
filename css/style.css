@@ -648,15 +648,34 @@ header {
     }
 
     @media(max-width:1260px) {
-        /*.about-us {
-            padding: 100px 40px
-        }*/
 
         .about-us img, .about-us .info-about-us {
             margin: 0;
+            margin-top: 15%;
         }
 
         .about-us {
             padding: 50px 10px;
+        }
+
+        .equipo .particulares .card-equipo {
+            width: 320px;
+            height: auto;
+        }
+
+        .equipo .particulares .card-equipo img {
+            width: 295px;
+        }
+
+        .equipo .particulares .card-equipo p {
+            font-size: 1.2rem;
+        }
+
+        .cocina .carousel .carousel-inner .carousel-item.active .platos {
+            width: 920px;
+        }
+
+        .cocina .carousel .carousel-inner .platos .card-container .card-img-top {
+            width: 220px;
         }
     }
